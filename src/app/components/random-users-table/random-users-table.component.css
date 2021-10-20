@@ -17,3 +17,11 @@ mat-cell {
   min-height: 100vh;
   min-width: 100vw;
 }
+
+#mat-field-input {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+}

@@ -3,7 +3,11 @@
 </div>
 
 <div class="mat-elevation-z1" *ngIf="!loading">
-
+  <div id="mat-field-input">
+    <mat-form-field>
+      <input (keyup)="applyFilter($any($event.target).value)" matInput placeholder="Search here...">
+    </mat-form-field>
+  </div>
   <table mat-table [dataSource]="dataSource" matSort >
 
     <ng-container matColumnDef="action">

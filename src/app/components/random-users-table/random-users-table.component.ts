@@ -52,6 +52,11 @@ export class RandomUsersTableComponent implements OnInit, OnDestroy {
     }
   }
 
+  applyFilter(filterValue?: string) {
+    if (filterValue)
+      this.dataSource.filter = filterValue.trim().toLocaleLowerCase();
+  }
+
   public openRecord(id: number, name: string): void {
     this._snackBar.open(`Record ${id} ${name} `, 'Close', {
       horizontalPosition: 'center',
