@@ -1,9 +1,5 @@
-<div id="div-loading" *ngIf="loading">
-  <mat-spinner></mat-spinner>
-</div>
-
-<div class="mat-elevation-z1" *ngIf="!loading">
-  <div id="mat-field-input">
+<div class="mat-elevation-z1">
+  <div id="mat-field">
     <mat-form-field>
       <input (keyup)="applyFilter($any($event.target).value)" matInput placeholder="Search here...">
     </mat-form-field>

@@ -9,19 +9,11 @@ mat-cell {
   text-align: left;
 }
 
-#div-loading {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
-#mat-field-input {
+#mat-field {
+  margin-top: 1rem;
+  width: 100vw;
   display: flex;
   flex: 1;
   justify-content: flex-end;
   align-items: center;
-  width: 100vw;
 }
